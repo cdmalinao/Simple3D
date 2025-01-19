@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=PT+Sans+Narrow:wght@400;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: "League Spartan", sans-serif
+}
+
+:root {
+    --bg-color: #34E4EA;
+    --main-color: #0EB1D2;
+    --text-color: #333;
+    --second-text-color: #555;
+    --white-color: #fff;
+    --cover-color: linear-gradient(135deg, #2B4141, #0EB1D2);
+    --pages-color: linear-gradient(135deg, #34E4EA, #8AB9B5);
+    --border: .125rem solid #C8C2AE;
+    --box-shadow: 0 0 .6rem rgba(0, 0, 0, 0.2);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.wrapper {
+    position: relative;
+    width: 66rem;
+    height: 45rem;
+    background: red
+}
+
+.cover {
+    position:absolute;
+    width: 50%;
+    height: 100%;
+    background: var(--cover-color);
+    box-shadow: var(--box-shadow);
+    border-top-left-radius: .6rem;
+    border-bottom-left-radius: .6rem;
+    transform-origin: right;
+}
+
+.cover.cover-left {
+    z-index: -1;
+}
+
+.cover.cover-right.turn {
+    transform: rotateY(180deg);
+}
+
+.book {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
