@@ -227,11 +227,11 @@ body {
     border-radius: 50%;
 }
 
-.workeduc-content .year {
+.workeduc-content .highlight {
     color: var(--main-color);
 }
 
-.workeduc-content .year i {
+.workeduc-content .highlight i {
     margin-right: .3rem;
 }
 
